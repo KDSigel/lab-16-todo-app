@@ -11,14 +11,20 @@ export function getUser() {
     return JSON.parse(stringyUser);
 }
 
+//return an array of todos
 export function getTodos() {
-
+    const { todos } = getUser();
+    return todos;
 }
 
-export function setTodos() {
+//put the todos in the right place in local storage
+export function setTodos(todos) {    
     const user = getUser();
+    user.todos = todos;
+    setUser(user);
 }
 
+//create a todo using this message and put it into local storage
 export function addTodo() {
 
 }

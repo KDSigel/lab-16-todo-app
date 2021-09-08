@@ -15,11 +15,6 @@ inputForm.addEventListener('submit', (e) => {
         name: newUser,
         password: password,
         todos: [
-            {
-                id: '',
-                todo: '',
-                completed:{}
-            }
         ]
     };
     setUser(userData);
