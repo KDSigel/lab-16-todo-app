@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <!--     <link rel="stylesheet" href="./styles/reset.css"> -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 <!--     <link rel="stylesheet" href="./styles/home.css"> -->
     <title>To do list</title>
 </head>
-<!-- this is the login page -->
+<!-- this is the list page -->
 <body>
     
     <header>
-        <h1>to-do-aniator</h1>
+        <h1>my list</h1>
         <div>(description here)</div>
     </header>
     
     <main>
-        <form>
-            <input type="text" id="name-input" name="name-input">
-            <input type="password" id="pwd" name="pwd">
-            <button id="log-in-btn">login</button>
+        <form id="input-new">
+            <input type="text">
+            <button>new</button>
         </form>
+        <form id=full-list>
+            <!-- <div></div>
+            <button>done</button> -->
+        </form>
+        
     </main>
     
     <footer>
-        <div>don't have an account?</div>
-        <a href="./create-account/">create one here</a>
+        <div>clear list</div>
+        <a href="../">log out</a>
     </footer>
 
-    <script type="module" src="./app.js"></script>
+    <script type="module" src="./list.js"></script>
 </body>
 
 </html>
