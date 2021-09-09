@@ -14,6 +14,7 @@ inputForm.addEventListener('submit', (e) => {
     const userData = {
         name: newUser,
         password: password,
+        idgenerator: 0,
         todos: [
         ]
     };

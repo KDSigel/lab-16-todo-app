@@ -1,4 +1,3 @@
-
 const USERDATA = 'USERDATA';
 
 export function setUser(userData) {
@@ -20,13 +19,23 @@ export function getTodos() {
 //put the todos in the right place in local storage
 export function setTodos(todos) {    
     const user = getUser();
+    user.idgenerator++;
     user.todos = todos;
     setUser(user);
 }
 
 //create a todo using this message and put it into local storage
-export function addTodo() {
+export function addTodo(description) {
+    const todos = getTodos();
+    const { idgenerator } = getUser();
 
+    const newTodo = {
+        id: idgenerator,
+        todo: description,
+        finished: false,
+    };
+    todos.push(newTodo);
+    setTodos(todos);
 }
 
 export function completeTodo() {
