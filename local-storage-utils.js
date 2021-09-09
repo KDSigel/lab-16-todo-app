@@ -1,4 +1,10 @@
 const USERDATA = 'USERDATA';
+// const DATABASEDATA = 'DATABASEDATA';
+
+// export function setDatabase(databaseData) {
+//     const stringyArray = JSON.stringify(databaseData);
+//     localStorage.setItem(DATABASEDATA, stringyArray);
+// }
 
 export function setUser(userData) {
     const stringyArray = JSON.stringify(userData);

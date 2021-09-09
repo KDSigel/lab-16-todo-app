@@ -1,4 +1,7 @@
 import { setUser } from '../local-storage-utils.js';
+// import { checkForDatabase } from './check-for-database.js';
+
+// checkForDatabase();
 
 const inputForm = document.querySelector('#input-form');
 
@@ -18,6 +21,7 @@ inputForm.addEventListener('submit', (e) => {
         todos: [
         ]
     };
+    // do something here
     setUser(userData);
     window.location = '../todo-list-page';
 });
