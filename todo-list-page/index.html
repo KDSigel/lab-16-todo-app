@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--     <link rel="stylesheet" href="./styles/reset.css"> -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./todo-list.css">
+<!--     <link rel="stylesheet" href="./styles/home.css"> -->
+    <title>To do list</title>
+</head>
+<!-- this is the list page -->
+<body>
+    <div></div>
+    <section>
+        <header>
+            <h1>what I will do today</h1>
+            <div>Don't make this too long, or<br> you will feel overwhelemed.</div>
+        </header>
+    
+        <main>
+            <form id="input-new">
+            <input type="text" name="new-description" minlength="2" maxlength="60" required placeholder="add item">
+            <input type="submit" value="Add New Task" class="add-new-task">
+            </form>
+            
+            <ul id=full-list>
+            </ul>
+        </main>
+
+        <footer>
+            <a href="../">log out</a>
+        </footer>
+    </section>
+    <div></div>
+    <script type="module" src="./todo-list.js"></script>
+</body>
+</html>
