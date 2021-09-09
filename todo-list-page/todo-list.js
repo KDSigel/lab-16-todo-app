@@ -1,4 +1,4 @@
-import { addTodo, setTodos, getTodos, getUser, setUser } from '../local-storage-utils.js';
+import { addTodo } from '../local-storage-utils.js';
 import { renderListItems } from './render-list-items.js';
 
 renderListItems();
