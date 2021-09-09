@@ -44,6 +44,13 @@ export function addTodo(description) {
     setTodos(todos);
 }
 
-export function completeTodo() {
-
+export function completeTodo(id) {
+    const todos = getTodos();
+    for (let todo of todos) {
+    // looking for the todo with matching id
+        if (id === todo.id) {
+            todo.finished = true;
+        }
+    }
+    setTodos(todos);
 }
